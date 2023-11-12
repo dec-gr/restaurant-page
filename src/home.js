@@ -4,7 +4,6 @@ const createHome = () => {
 
   const home = document.createElement("div");
   home.classList.add("home");
-
   const p1 = createParagraph("The ancestoral home of Garlic Bread*");
 
   const p2 = createParagraph("*in Brooklyn");

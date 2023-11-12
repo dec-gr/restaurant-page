@@ -19,7 +19,7 @@ body {
   background-image: url("img/bread-background.jpeg");
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Montserrate", cursive;
+  font-family: "Montserrat", cursive;
   color: var(--font-color);
 }
 
@@ -51,7 +51,17 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 100vh;
+}
+
+.content p {
+  width: 100%;
+  padding: 1rem;
+}
+
+.content img {
+  max-height: 420px;
+  padding: 1rem;
+  opacity: 90%;
 }
 
 /* Header */
@@ -89,7 +99,9 @@ button {
 }
 
 .main {
-  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
   padding: 4rem;
   margin: 6rem 0;
   font-size: 2rem;
@@ -104,7 +116,6 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   animation: fadIn 1.5s;
 }
 
@@ -127,6 +138,99 @@ button {
   margin-top: 3rem;
   margin-bottom: 3rem;
   opacity: 90%;
+}
+
+/* Menu */
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  animation: fadeIn 1.5s;
+}
+
+.menu-card {
+  background-color: var(--background-light);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+  /* height: 300px; */
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.menu-card:hover {
+  background-color: var(--background-light-hover);
+}
+
+.menu-card h1 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.menu-card p {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+.menu-card img {
+  width: 60%;
+}
+
+/* Menu page */
+/* 
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+  animation: fadeIn 1.5s;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  padding: 4rem;
+  cursor: pointer;
+  background-color: var(--background-light);
+  transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: var(--background-light-hover);
+}
+
+.menu-item img {
+  width: 60%;
+}
+
+.menu-item h2 {
+  padding: 2rem;
+}
+
+.menu-item p {
+  font-size: 1.5rem;
+  text-align: center;
+}  */
+
+/* Contact */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadIn 1.5s;
+}
+
+.contact p {
+  padding: 1rem;
 }
 
 /* 
