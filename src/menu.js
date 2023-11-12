@@ -19,9 +19,6 @@ const createMenuCard = (image, name, ingredients) => {
 };
 
 const createMenu = () => {
-  const main = document.createElement("div");
-  main.classList.add("main");
-
   const menuGrid = document.createElement("div");
   menuGrid.classList.add("menu-grid");
   menuGrid.appendChild(
@@ -88,13 +85,12 @@ const createMenu = () => {
     )
   );
 
-  main.appendChild(menuGrid);
-  return main;
+  return menuGrid;
 };
 
-function loadMenu() {
-  const content = document.getElementById("content");
-  content.appendChild(createMenu());
-}
+// function loadMenu() {
+//   const content = document.getElementById("content");
+//   content.appendChild(createMenu());
+// }
 
-export default loadMenu;
+export default createMenu;

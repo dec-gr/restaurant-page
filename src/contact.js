@@ -1,7 +1,4 @@
 const createContact = () => {
-  const main = document.createElement("div");
-  main.classList.add("main");
-
   const contact = document.createElement("div");
   contact.classList.add("contact");
 
@@ -23,8 +20,7 @@ const createContact = () => {
   contact.appendChild(p2);
   contact.appendChild(mapContainer);
 
-  main.appendChild(contact);
-  return main;
+  return contact;
 };
 
 function createParagraph(text) {
@@ -33,9 +29,4 @@ function createParagraph(text) {
   return paragraph;
 }
 
-function loadContact() {
-  const content = document.getElementById("content");
-  content.appendChild(createContact());
-}
-
-export default loadContact;
+export default createContact;

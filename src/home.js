@@ -1,7 +1,4 @@
 const createHome = () => {
-  const main = document.createElement("div");
-  main.classList.add("main");
-
   const home = document.createElement("div");
   home.classList.add("home");
   const p1 = createParagraph("The ancestoral home of Garlic Bread*");
@@ -26,8 +23,7 @@ const createHome = () => {
   home.appendChild(imgContainer);
   home.appendChild(p3);
 
-  main.appendChild(home);
-  return main;
+  return home;
 };
 
 function createParagraph(text) {
@@ -36,9 +32,4 @@ function createParagraph(text) {
   return paragraph;
 }
 
-function loadHome() {
-  const content = document.getElementById("content");
-  content.appendChild(createHome());
-}
-
-export default loadHome;
+export default createHome;
